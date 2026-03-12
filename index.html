@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>sumi — Flashcards & Spaced Repetition for iPhone & iPad</title>
+<meta name="description" content="sumi is a clean, offline-first flashcard app for iOS with spaced repetition, .apkg Anki import, and cloze deletions. The simple Anki alternative for iPhone.">
+<meta name="keywords" content="flashcard app, spaced repetition, anki alternative, anki import, iOS flashcards, study app, SRS, cloze deletion, apkg import, memorize vocabulary">
+<link rel="canonical" href="https://edenroye.github.io/sumi/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="sumi — Quiet Flashcards for iPhone">
+<meta property="og:description" content="A clean flashcard app with spaced repetition and Anki import. Offline-first, no account required.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://edenroye.github.io/sumi/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="sumi — Quiet Flashcards for iPhone">
+<meta name="twitter:description" content="A clean flashcard app with spaced repetition and Anki import. Offline-first, no account required.">
+
+<!-- App Store Smart Banner -->
+<meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#1a1a18;background:#FAFAF8;line-height:1.6}
+a{color:#2D4A3E;text-decoration:none}
+
+/* Hero */
+.hero{max-width:720px;margin:0 auto;padding:80px 24px 60px;text-align:center}
+.hero-logo{font-size:48px;font-weight:600;letter-spacing:-1px;margin-bottom:8px}
+.hero-tagline{font-size:22px;color:#666;margin-bottom:32px;font-weight:400}
+.hero-desc{font-size:17px;color:#444;max-width:520px;margin:0 auto 40px;line-height:1.7}
+.app-store-badge{height:54px;border-radius:12px;transition:opacity .2s}
+.app-store-badge:hover{opacity:.8}
+
+/* Features */
+.features{max-width:720px;margin:0 auto;padding:40px 24px 60px}
+.features h2{font-size:28px;font-weight:600;text-align:center;margin-bottom:40px}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.feature{padding:24px;background:#fff;border-radius:16px;border:1px solid #eee}
+.feature h3{font-size:17px;font-weight:600;margin-bottom:8px}
+.feature p{font-size:15px;color:#555;line-height:1.6}
+
+/* Comparison */
+.compare{max-width:720px;margin:0 auto;padding:40px 24px 60px}
+.compare h2{font-size:28px;font-weight:600;text-align:center;margin-bottom:16px}
+.compare-sub{text-align:center;color:#666;margin-bottom:32px;font-size:16px}
+.compare table{width:100%;border-collapse:collapse;font-size:15px}
+.compare th,.compare td{padding:12px 16px;text-align:left;border-bottom:1px solid #eee}
+.compare th{font-weight:600;background:#f5f5f3}
+.compare td:first-child{font-weight:500}
+
+/* FAQ */
+.faq{max-width:720px;margin:0 auto;padding:40px 24px 60px}
+.faq h2{font-size:28px;font-weight:600;text-align:center;margin-bottom:32px}
+.faq-item{margin-bottom:24px}
+.faq-item h3{font-size:17px;font-weight:600;margin-bottom:6px}
+.faq-item p{font-size:15px;color:#555}
+
+/* CTA */
+.cta{text-align:center;padding:60px 24px 80px}
+.cta h2{font-size:28px;font-weight:600;margin-bottom:16px}
+.cta p{color:#666;margin-bottom:32px;font-size:17px}
+
+/* Footer */
+footer{max-width:720px;margin:0 auto;padding:24px;border-top:1px solid #eee;font-size:13px;color:#999;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+footer a{color:#888}
+
+/* SEO articles */
+.articles{max-width:720px;margin:0 auto;padding:40px 24px 20px}
+.articles h2{font-size:28px;font-weight:600;text-align:center;margin-bottom:32px}
+.article-list{display:flex;flex-direction:column;gap:16px}
+.article-link{display:block;padding:20px 24px;background:#fff;border:1px solid #eee;border-radius:12px;transition:border-color .2s}
+.article-link:hover{border-color:#2D4A3E}
+.article-link h3{font-size:17px;font-weight:600;margin-bottom:4px}
+.article-link p{font-size:14px;color:#666}
+
+@media(max-width:600px){
+  .hero{padding:60px 20px 40px}
+  .hero-logo{font-size:36px}
+  .hero-tagline{font-size:18px}
+  .feature-grid{grid-template-columns:1fr}
+  footer{flex-direction:column;text-align:center}
+}
+</style>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MobileApplication",
+  "name":"sumi",
+  "operatingSystem":"iOS",
+  "applicationCategory":"EducationalApplication",
+  "description":"A clean, offline-first flashcard app with spaced repetition and Anki import for iPhone and iPad.",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"1"}
+}
+</script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-logo">sumi</div>
+  <p class="hero-tagline">Quiet flashcards for iPhone &amp; iPad</p>
+  <p class="hero-desc">A clean, offline-first flashcard app with spaced repetition. Import your Anki decks, study with cloze deletions, and track your progress — no account required.</p>
+  <a href="https://apps.apple.com/app/sumi-quiet-flashcards/id6741108854" aria-label="Download sumi on the App Store">
+    <img class="app-store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+  </a>
+</section>
+
+<section class="features">
+  <h2>Why students choose sumi</h2>
+  <div class="feature-grid">
+    <div class="feature">
+      <h3>📥 Import Anki decks</h3>
+      <p>Open your .apkg files directly on iPhone. Cards, formatting, and media come through. Switch from Anki in seconds.</p>
+    </div>
+    <div class="feature">
+      <h3>🧠 Spaced repetition</h3>
+      <p>Built-in SRS algorithm schedules reviews at the optimal time. Cards you know appear less often. Cards you struggle with appear more.</p>
+    </div>
+    <div class="feature">
+      <h3>✏️ Cloze deletions</h3>
+      <p>Create fill-in-the-blank cards with {{curly braces}}. Perfect for language vocabulary, medical terms, and exam prep.</p>
+    </div>
+    <div class="feature">
+      <h3>📴 Offline-first</h3>
+      <p>Everything stored on your device. No account, no cloud, no internet needed. Your data stays yours.</p>
+    </div>
+    <div class="feature">
+      <h3>📊 Study insights</h3>
+      <p>Daily goal tracking, streak counter, accuracy stats, and review forecasting to keep you on track.</p>
+    </div>
+    <div class="feature">
+      <h3>🎯 Flexible import</h3>
+      <p>Import from .apkg (Anki), CSV, TSV, plain text, and JSON. Bring your cards from anywhere.</p>
+    </div>
+  </div>
+</section>
+
+<section class="compare">
+  <h2>sumi vs Anki for iOS</h2>
+  <p class="compare-sub">AnkiMobile costs $24.99. Here's how sumi compares.</p>
+  <table>
+    <tr><th>Feature</th><th>sumi</th><th>AnkiMobile</th></tr>
+    <tr><td>Price</td><td>Free (pro optional)</td><td>$24.99</td></tr>
+    <tr><td>.apkg import</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Spaced repetition</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Cloze deletions</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Offline</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Modern UI</td><td>✓</td><td>—</td></tr>
+    <tr><td>No account needed</td><td>✓</td><td>—</td></tr>
+    <tr><td>CSV/TSV import</td><td>✓</td><td>—</td></tr>
+  </table>
+</section>
+
+<section class="faq" id="faq">
+  <h2>Frequently asked questions</h2>
+  <div class="faq-item">
+    <h3>Can I import my Anki decks?</h3>
+    <p>Yes. sumi reads .apkg files directly. Open the file on your iPhone or use the in-app import. Your cards, formatting, and media are preserved.</p>
+  </div>
+  <div class="faq-item">
+    <h3>How does spaced repetition work?</h3>
+    <p>After each review, you rate how well you remembered the card. The SRS algorithm then schedules the next review — cards you know well appear days or weeks later, while difficult cards come back sooner. This is scientifically proven to improve long-term retention.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Is sumi free?</h3>
+    <p>Yes. The free version includes 1 deck, 100 cards, and 2 imports. sumi pro unlocks unlimited decks, cards, imports, cram mode, reverse study, and detailed insights.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Does sumi work offline?</h3>
+    <p>Completely. All data is stored locally on your device. No internet connection, no account, and no cloud sync required.</p>
+  </div>
+  <div class="faq-item">
+    <h3>What file formats can I import?</h3>
+    <p>sumi supports .apkg (Anki packages), CSV, TSV, plain text, and JSON files.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Is my data private?</h3>
+    <p>Yes. sumi collects no analytics, no personal data, and uses no third-party tracking. Everything stays on your device. Read our <a href="https://edenroye.github.io/sumi-legal/privacy.html">privacy policy</a>.</p>
+  </div>
+</section>
+
+<section class="articles">
+  <h2>Learn more</h2>
+  <div class="article-list">
+    <a class="article-link" href="import-anki-decks-iphone.html">
+      <h3>How to import Anki decks on iPhone</h3>
+      <p>Step-by-step guide to moving your .apkg flashcards to iOS without AnkiMobile.</p>
+    </a>
+    <a class="article-link" href="spaced-repetition-guide.html">
+      <h3>What is spaced repetition? A beginner's guide</h3>
+      <p>The science behind SRS and how to use it to study more effectively.</p>
+    </a>
+    <a class="article-link" href="anki-alternative-ios.html">
+      <h3>Best Anki alternatives for iPhone in 2026</h3>
+      <p>Comparing the top flashcard apps for iOS — features, pricing, and which is right for you.</p>
+    </a>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Start studying smarter</h2>
+  <p>Free on the App Store. No account required.</p>
+  <a href="https://apps.apple.com/app/sumi-quiet-flashcards/id6741108854" aria-label="Download sumi on the App Store">
+    <img class="app-store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+  </a>
+</section>
+
+<footer>
+  <span>© 2026 sumi</span>
+  <span>
+    <a href="https://edenroye.github.io/sumi-legal/terms.html">Terms</a> ·
+    <a href="https://edenroye.github.io/sumi-legal/privacy.html">Privacy</a> ·
+    <a href="mailto:edenroyeapps@gmail.com">Contact</a>
+  </span>
+</footer>
+
+<!-- FAQ Structured Data -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Can I import my Anki decks?","acceptedAnswer":{"@type":"Answer","text":"Yes. sumi reads .apkg files directly. Open the file on your iPhone or use the in-app import. Your cards, formatting, and media are preserved."}},
+{"@type":"Question","name":"How does spaced repetition work?","acceptedAnswer":{"@type":"Answer","text":"After each review, you rate how well you remembered the card. The SRS algorithm then schedules the next review — cards you know well appear days or weeks later, while difficult cards come back sooner."}},
+{"@type":"Question","name":"Is sumi free?","acceptedAnswer":{"@type":"Answer","text":"Yes. The free version includes 1 deck, 100 cards, and 2 imports. sumi pro unlocks unlimited decks, cards, imports, cram mode, reverse study, and detailed insights."}},
+{"@type":"Question","name":"Does sumi work offline?","acceptedAnswer":{"@type":"Answer","text":"Completely. All data is stored locally on your device. No internet connection, no account, and no cloud sync required."}},
+{"@type":"Question","name":"What file formats can I import?","acceptedAnswer":{"@type":"Answer","text":"sumi supports .apkg (Anki packages), CSV, TSV, plain text, and JSON files."}}
+]}
+</script>
+</body>
+</html>
